@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2447C5DF202ADD0A0064588D /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2447C5DE202ADD0A0064588D /* HTTPMethod.swift */; };
+		2447C5E1202ADD120064588D /* FormTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2447C5E0202ADD120064588D /* FormTarget.swift */; };
+		2447C5E4202ADD430064588D /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2447C5E3202ADD430064588D /* HTMLParser.swift */; };
 		C1B2CF51202A344E00CC6E59 /* HTMLCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = C1B2CF4F202A344E00CC6E59 /* HTMLCreator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C1B2CF59202A348E00CC6E59 /* HTMLEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B2CF58202A348E00CC6E59 /* HTMLEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2447C5DE202ADD0A0064588D /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		2447C5E0202ADD120064588D /* FormTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTarget.swift; sourceTree = "<group>"; };
+		2447C5E3202ADD430064588D /* HTMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLParser.swift; sourceTree = "<group>"; };
 		C1B2CF4C202A344E00CC6E59 /* HTMLCreator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HTMLCreator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1B2CF4F202A344E00CC6E59 /* HTMLCreator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTMLCreator.h; sourceTree = "<group>"; };
 		C1B2CF50202A344E00CC6E59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -29,6 +35,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2447C5DD202ADCFA0064588D /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				2447C5DE202ADD0A0064588D /* HTTPMethod.swift */,
+				2447C5E0202ADD120064588D /* FormTarget.swift */,
+				C1B2CF58202A348E00CC6E59 /* HTMLEnum.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		2447C5E2202ADD360064588D /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				2447C5E3202ADD430064588D /* HTMLParser.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
 		C1B2CF42202A344E00CC6E59 = {
 			isa = PBXGroup;
 			children = (
@@ -48,9 +72,10 @@
 		C1B2CF4E202A344E00CC6E59 /* HTMLCreator */ = {
 			isa = PBXGroup;
 			children = (
+				2447C5E2202ADD360064588D /* Parser */,
+				2447C5DD202ADCFA0064588D /* Enums */,
 				C1B2CF4F202A344E00CC6E59 /* HTMLCreator.h */,
 				C1B2CF50202A344E00CC6E59 /* Info.plist */,
-				C1B2CF58202A348E00CC6E59 /* HTMLEnum.swift */,
 			);
 			path = HTMLCreator;
 			sourceTree = "<group>";
@@ -135,6 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2447C5DF202ADD0A0064588D /* HTTPMethod.swift in Sources */,
+				2447C5E4202ADD430064588D /* HTMLParser.swift in Sources */,
+				2447C5E1202ADD120064588D /* FormTarget.swift in Sources */,
 				C1B2CF59202A348E00CC6E59 /* HTMLEnum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
