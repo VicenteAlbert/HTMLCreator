@@ -8,6 +8,6 @@
 
 import Foundation
 
-enum FormTarget: String {
+enum Target: String {
     case _blank, _self, _parent, _top
 }

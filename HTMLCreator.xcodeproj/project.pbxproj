@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		2447C5DF202ADD0A0064588D /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2447C5DE202ADD0A0064588D /* HTTPMethod.swift */; };
-		2447C5E1202ADD120064588D /* FormTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2447C5E0202ADD120064588D /* FormTarget.swift */; };
+		2447C5E1202ADD120064588D /* Target.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2447C5E0202ADD120064588D /* Target.swift */; };
 		2447C5E4202ADD430064588D /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2447C5E3202ADD430064588D /* HTMLParser.swift */; };
+		C14CCF31202F892100C57E07 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14CCF30202F892100C57E07 /* Element.swift */; };
+		C14CCF33202F893E00C57E07 /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14CCF32202F893E00C57E07 /* Attribute.swift */; };
+		C14CCF36202F8A6E00C57E07 /* Node+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14CCF35202F8A6E00C57E07 /* Node+Ext.swift */; };
+		C14CCF39202F8B5500C57E07 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14CCF38202F8B5500C57E07 /* HelperFunctions.swift */; };
+		C14CCF3C202F8BA300C57E07 /* CustomOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14CCF3B202F8BA300C57E07 /* CustomOperators.swift */; };
+		C14CCF3F202F8DBE00C57E07 /* HelperConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14CCF3E202F8DBE00C57E07 /* HelperConstants.swift */; };
 		C1B2CF51202A344E00CC6E59 /* HTMLCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = C1B2CF4F202A344E00CC6E59 /* HTMLCreator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C1B2CF59202A348E00CC6E59 /* HTMLEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B2CF58202A348E00CC6E59 /* HTMLEnum.swift */; };
+		C1B2CF59202A348E00CC6E59 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B2CF58202A348E00CC6E59 /* Node.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2447C5DE202ADD0A0064588D /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
-		2447C5E0202ADD120064588D /* FormTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTarget.swift; sourceTree = "<group>"; };
+		2447C5E0202ADD120064588D /* Target.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Target.swift; sourceTree = "<group>"; };
 		2447C5E3202ADD430064588D /* HTMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLParser.swift; sourceTree = "<group>"; };
+		C14CCF30202F892100C57E07 /* Element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
+		C14CCF32202F893E00C57E07 /* Attribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attribute.swift; sourceTree = "<group>"; };
+		C14CCF35202F8A6E00C57E07 /* Node+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Node+Ext.swift"; sourceTree = "<group>"; };
+		C14CCF38202F8B5500C57E07 /* HelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
+		C14CCF3B202F8BA300C57E07 /* CustomOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOperators.swift; sourceTree = "<group>"; };
+		C14CCF3E202F8DBE00C57E07 /* HelperConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperConstants.swift; sourceTree = "<group>"; };
 		C1B2CF4C202A344E00CC6E59 /* HTMLCreator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HTMLCreator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1B2CF4F202A344E00CC6E59 /* HTMLCreator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTMLCreator.h; sourceTree = "<group>"; };
 		C1B2CF50202A344E00CC6E59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C1B2CF58202A348E00CC6E59 /* HTMLEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLEnum.swift; sourceTree = "<group>"; };
+		C1B2CF58202A348E00CC6E59 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,8 +51,8 @@
 			isa = PBXGroup;
 			children = (
 				2447C5DE202ADD0A0064588D /* HTTPMethod.swift */,
-				2447C5E0202ADD120064588D /* FormTarget.swift */,
-				C1B2CF58202A348E00CC6E59 /* HTMLEnum.swift */,
+				2447C5E0202ADD120064588D /* Target.swift */,
+				C1B2CF58202A348E00CC6E59 /* Node.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -51,6 +63,40 @@
 				2447C5E3202ADD430064588D /* HTMLParser.swift */,
 			);
 			path = Parser;
+			sourceTree = "<group>";
+		};
+		C14CCF2F202F88E500C57E07 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				C14CCF30202F892100C57E07 /* Element.swift */,
+				C14CCF32202F893E00C57E07 /* Attribute.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		C14CCF34202F8A6700C57E07 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C14CCF35202F8A6E00C57E07 /* Node+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C14CCF37202F8B4A00C57E07 /* HelperFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C14CCF38202F8B5500C57E07 /* HelperFunctions.swift */,
+				C14CCF3E202F8DBE00C57E07 /* HelperConstants.swift */,
+			);
+			path = HelperFiles;
+			sourceTree = "<group>";
+		};
+		C14CCF3A202F8B9500C57E07 /* Operators */ = {
+			isa = PBXGroup;
+			children = (
+				C14CCF3B202F8BA300C57E07 /* CustomOperators.swift */,
+			);
+			path = Operators;
 			sourceTree = "<group>";
 		};
 		C1B2CF42202A344E00CC6E59 = {
@@ -72,6 +118,10 @@
 		C1B2CF4E202A344E00CC6E59 /* HTMLCreator */ = {
 			isa = PBXGroup;
 			children = (
+				C14CCF3A202F8B9500C57E07 /* Operators */,
+				C14CCF37202F8B4A00C57E07 /* HelperFiles */,
+				C14CCF34202F8A6700C57E07 /* Extensions */,
+				C14CCF2F202F88E500C57E07 /* Structs */,
 				2447C5E2202ADD360064588D /* Parser */,
 				2447C5DD202ADCFA0064588D /* Enums */,
 				C1B2CF4F202A344E00CC6E59 /* HTMLCreator.h */,
@@ -160,10 +210,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C14CCF33202F893E00C57E07 /* Attribute.swift in Sources */,
+				C14CCF39202F8B5500C57E07 /* HelperFunctions.swift in Sources */,
+				C14CCF3C202F8BA300C57E07 /* CustomOperators.swift in Sources */,
+				C14CCF36202F8A6E00C57E07 /* Node+Ext.swift in Sources */,
 				2447C5DF202ADD0A0064588D /* HTTPMethod.swift in Sources */,
+				C14CCF3F202F8DBE00C57E07 /* HelperConstants.swift in Sources */,
 				2447C5E4202ADD430064588D /* HTMLParser.swift in Sources */,
-				2447C5E1202ADD120064588D /* FormTarget.swift in Sources */,
-				C1B2CF59202A348E00CC6E59 /* HTMLEnum.swift in Sources */,
+				2447C5E1202ADD120064588D /* Target.swift in Sources */,
+				C1B2CF59202A348E00CC6E59 /* Node.swift in Sources */,
+				C14CCF31202F892100C57E07 /* Element.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
