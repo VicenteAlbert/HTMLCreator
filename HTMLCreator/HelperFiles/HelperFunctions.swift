@@ -9,45 +9,137 @@
 import Foundation
 
 func node(_ name: String, _ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
-    return .element(.init(name, attribs, children))
+    return Node.element(Element(name, attribs, children))
 }
 
 // MARK: - HTML Tags functions
+// MARK: -
 
-//case p(CommonProperties, value: String)
-//case h1(CommonProperties, value: String)
-//case h2(CommonProperties, value: String)
-//case h3(CommonProperties, value: String)
-//case h4(CommonProperties, value: String)
-//case h5(CommonProperties, value: String)
-//case h6(CommonProperties, value: String)
-//case span(CommonProperties, value: String)
-//
-////MARK: - Indirect cases - where element can have child components
-//indirect case a(CommonProperties, href: String, value: HTML)
-//indirect case html(value: HTML)
-//indirect case body(CommonProperties, value: HTML)
-//indirect case form(CommonProperties, action: String, method: HTTPMethod, target: FormTarget, value: HTML)
+// MARK: Root components
+func html(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
+    return node("html", attribs, children)
+}
 
+func body(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
+    return node("body", attribs, children)
+}
+
+func head(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
+    return node("head", attribs, children)
+}
+
+func script(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
+    return node("script", attribs, children)
+}
+
+func form(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
+    return node("form", attribs, children)
+}
+
+// MARK: Headings
+func h1(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
+    return node("h1", attribs, children)
+}
+
+func h2(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
+    return node("h2", attribs, children)
+}
+
+func h3(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
+    return node("h3", attribs, children)
+}
+
+func h4(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
+    return node("h4", attribs, children)
+}
+
+func h5(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
+    return node("h5", attribs, children)
+}
+
+func h6(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
+    return node("h6", attribs, children)
+}
+
+// MARK: Text
 func p(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
     return node("p", attribs, children)
 }
 
-func h1(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
-    return node("h1", attribs, children)
+func span(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
+    return node("span", attribs, children)
 }
-func h2(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
-    return node("h2", attribs, children)
+
+func a(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
+    return node("a", attribs, children)
 }
-func h3(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
-    return node("h3", attribs, children)
+
+func b(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
+    return node("b", attribs, children)
 }
-func h4(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
-    return node("h4", attribs, children)
+
+func strong(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
+    return node("strong", attribs, children)
 }
-func h5(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
-    return node("h5", attribs, children)
+
+func em(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
+    return node("em", attribs, children)
 }
-func h6(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
-    return node("h6", attribs, children)
+
+func mark(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
+    return node("mark", attribs, children)
+}
+
+func blockquote(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
+    return node("blockquote", attribs, children)
+}
+
+func q(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
+    return node("q", attribs, children)
+}
+
+// MARK: Table
+func table(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
+    return node("table", attribs, children)
+}
+
+func tbody(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
+    return node("tbody", attribs, children)
+}
+
+func thead(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
+    return node("thead", attribs, children)
+}
+
+func tfoot(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
+    return node("tfoot", attribs, children)
+}
+
+func tr(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
+    return node("tr", attribs, children)
+}
+
+func th(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
+    return node("th", attribs, nil)
+}
+
+func td(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
+    return node("td", attribs, children)
+}
+
+func caption(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
+    return node("caption", attribs, children)
+}
+
+func col(_ attribs: [Attribute] = []) -> Node {
+    return node("col", attribs, nil)
+}
+
+// MARK: Misc
+func br() -> Node {
+    return node("br", [], nil)
+}
+
+func button(_ attribs: [Attribute] = [], _ children: [Node]? = nil) -> Node {
+    return node("button", attribs, children)
 }

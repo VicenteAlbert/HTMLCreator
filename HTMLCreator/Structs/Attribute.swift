@@ -18,4 +18,7 @@ struct Attribute {
     }
 }
 
-
+struct AttributedKey<A> {
+    let key: String
+    init (_ key: String) { self.key = key }
+}

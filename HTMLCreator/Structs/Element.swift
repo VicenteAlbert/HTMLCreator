@@ -19,8 +19,3 @@ struct Element {
         self.children = children
     }
 }
-
-struct AttributeKey<A> {
-    let key: String
-    init (_ key: String) { self.key = key }
-}

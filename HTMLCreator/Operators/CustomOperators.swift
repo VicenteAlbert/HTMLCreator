@@ -10,6 +10,10 @@ import Foundation
 
 // MARK; - Attribute operators
 infix operator =>
-func => <A> (key: AttributeKey<A>, value: A) -> Attribute {
-    return .init(key.key, "\(value)")
+func => <A> (key: AttributedKey<A>, value: A) -> Attribute {
+    return Attribute(key.key, "\(value)")
+}
+
+func => <A: RawRepresentable> (key: AttributedKey<A>, value: A) -> Attribute where A.RawValue == String {
+    return Attribute(key.key, value.rawValue)
 }
